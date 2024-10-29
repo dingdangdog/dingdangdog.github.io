@@ -1,0 +1,1 @@
+const t="DingDangDog",o="Hello my friend! I'm DingDangDog.",e="Strive to be a handsome, talented, and magnanimous old dog!",l={title:t,hello:o,motto:e,"home-list":{title:"my works"}},n="老狗",s="你好啊我的朋友！我是老狗。",i="努力做一只帅气、有才、豁达的老狗！",a={title:n,hello:s,motto:i,"home-list":{title:"我的作品"}},m=()=>({legacy:!1,locale:"en",messages:{en:l,zh:a}});export{m as default};
