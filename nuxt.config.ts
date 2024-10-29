@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   app: {
     head: {
       title: "DingDangDog",
@@ -17,18 +17,8 @@ export default defineNuxtConfig({
   $development: {},
   $production: {},
   css: ["~/assets/css/base.css"],
-  runtimeConfig: {
-    // The private keys which are only available server-side
-    apiSecret: "123",
-    // Keys within public are also exposed client-side
-    public: {
-      apiBase: "/api",
-    },
-  },
+  runtimeConfig: {},
   modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss"],
-  // imports: {
-  //   autoImport: true,
-  // },
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "en",
