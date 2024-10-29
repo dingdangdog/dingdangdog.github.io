@@ -21,20 +21,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: yarn
+          cache: npm
 
       - name: 安装依赖
-        run: yarn install --frozen-lockfile
+        run: npm install
 
       - name: 构建文档
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          yarn run docs:build
-          > src/.vuepress/dist/.nojekyll
+        run: npm run generate
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: src/.vuepress/dist
+          folder: dist
