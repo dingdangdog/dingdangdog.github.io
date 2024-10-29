@@ -60,19 +60,19 @@ const sites: Site[] = [
   {
     title: "月上老狗",
     url: "https://www.oldmoon.top",
-    icon: "https://images.oldmoon.top/images/dingdangdog/oldmoon.png",
+    icon: "/oldmoon.png",
     color: "rgb(255 255 255)",
   },
   {
     title: "Cashbook",
     url: "https://github.com/dingdangdog/cashbook",
-    icon: "https://images.oldmoon.top/images/dingdangdog/thumbs/dingdangdog-1674980314.png",
+    icon: "/cashbook.png",
     color: "rgb(104 233 145)",
   },
   {
     title: "Doimage",
     url: "https://github.com/dingdangdog/Doimage",
-    icon: "https://images.oldmoon.top/images/dingdangdog/thumbs/dingdangdog-1679378444620.png",
+    icon: "/doimage.png",
     color: "rgb(247 72 126)",
   },
 ];

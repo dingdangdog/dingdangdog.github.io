@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "DingDangDog",
+      link: [
+        {
+          rel: "icon",
+          href: "/dingdangdog.jpg",
+        },
+      ],
     },
   },
   compatibilityDate: "2024-04-03",
