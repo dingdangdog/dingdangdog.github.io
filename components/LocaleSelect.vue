@@ -36,14 +36,14 @@ onUnmounted(() => {
 
 <template>
   <div class="relative inline-block text-left" @click="toggleDropdown()">
-    <div class="flex items-center mx-2 md:mx-4 h-full cursor-pointer">
-      <span class="border-2 rounded-md p-1">{{ localName }}</span>
+    <div class="mx-2 md:mx-4 h-full cursor-pointer">
+      <span class="rounded-md p-1">{{ localName }}</span>
     </div>
 
     <!-- Dropdown menu -->
     <div
       v-if="isDropdownOpen"
-      class="absolute right-0 min-w-32 border rounded-md shadow-lg z-20 bg-gray-950"
+      class="absolute right-0 top-12 min-w-32 rounded-sm shadow-lg z-20 bg-gray-950"
     >
       <!-- 我的主页 -->
       <NuxtLink
@@ -53,7 +53,7 @@ onUnmounted(() => {
         @click="localName = lc.name"
       >
         <div
-          class="p-1 hover:bg-gray-800 text-center rounded-md"
+          class="p-1 hover:bg-gray-800 text-center rounded-sm"
           :class="{ 'bg-gray-600': lc.code === locale }"
         >
           {{ lc.name }}

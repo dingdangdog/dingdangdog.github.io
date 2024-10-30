@@ -3,15 +3,23 @@
     class="w-full h-16 bg-gray-950 fixed top-0 left-0 flex justify-between items-center transition-transform duration-500 ease-in-out transform"
     :class="isMenuVisible ? 'translate-y-0' : '-translate-y-full'"
   >
-    <div class="pl-4 md:pl-8">
-      <h1 class="text-lg md:text-xl">
+    <div class="w-1/2 flex items-center h-full">
+      <a class="px-4 md:pl-8 text-lg md:text-xl" href="/">
         {{ $t("title") }}
-      </h1>
+      </a>
+      <a
+        class="h-full flex justify-center items-center px-4 hover:bg-gray-800 case-in-out duration-300"
+        href="/donate"
+        >{{ $t("menu.donate") }}
+      </a>
     </div>
 
-    <div></div>
+    <!-- <div class="w-1/2 flex h-full"></div> -->
 
-    <div class="absolute top-0 right-2 flex justify-center h-full">
+    <div class="w-1/2 h-full flex justify-end items-center">
+      <a href="https://github.com/dingdangdog/dingdangdog.github.io">
+        <span><IconGithub class="w-8 h-8" :color="`rgb(243 244 246)`" /></span>
+      </a>
       <LocaleSelect />
     </div>
   </div>
