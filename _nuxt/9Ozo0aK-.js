@@ -1,0 +1,1 @@
+import{_ as t,c as o,a,o as s}from"./CTtxft9o.js";const l={};function n(r,e){return s(),o("section",null,e[0]||(e[0]=[a("p",null,"This page will be displayed at the /about.html route.",-1)]))}const u=t(l,[["render",n]]);export{u as default};
