@@ -81,6 +81,12 @@ const sites: Site[] = [
     icon: "https://imgpro.oldmoon.top/favicon.png",
     color: "rgb(134,27,196)",
   },
+  {
+    title: "公众号MD编辑器",
+    url: "https://wxeditor.oldmoon.top",
+    icon: "https://wxeditor.oldmoon.top/assets/images/favicon.png",
+    color: "rgb(122,122,122)",
+  },
 ];
 </script>
 
