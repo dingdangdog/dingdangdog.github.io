@@ -31,7 +31,7 @@
             >
               <img
                 :src="site.icon"
-                class="w-16 md:w-24 h-16 md:h-24 object-contain m-0 md:m-2"
+                class="w-16 md:w-24 h-16 md:h-24 object-contain m-0 md:m-2 rounded-md overflow-hidden"
               />
               <h3
                 class="py-1 md:py-2 text-base md:text-xl"
@@ -61,19 +61,25 @@ const sites: Site[] = [
     title: "月上老狗",
     url: "https://www.oldmoon.top",
     icon: "/oldmoon.png",
-    color: "rgb(255 255 255)",
+    color: "rgb(255,255,255)",
   },
   {
     title: "Cashbook",
     url: "https://github.com/dingdangdog/cashbook",
     icon: "/cashbook.png",
-    color: "rgb(104 233 145)",
+    color: "rgb(104,233,145)",
   },
   {
     title: "Doimage",
     url: "https://github.com/dingdangdog/Doimage",
     icon: "/doimage.png",
-    color: "rgb(247 72 126)",
+    color: "rgb(247,72,126)",
+  },
+  {
+    title: "老狗图片处理厂",
+    url: "https://imgpro.oldmoon.top",
+    icon: "https://imgpro.oldmoon.top/favicon.png",
+    color: "rgb(134,27,196)",
   },
 ];
 </script>
