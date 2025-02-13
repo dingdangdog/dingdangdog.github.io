@@ -12,12 +12,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+  devServer: { port: 13002 },
   compatibilityDate: "2024-04-03",
-  devtools: { enabled: true },
-  $development: {},
-  $production: {},
   css: ["~/assets/css/base.css"],
-  runtimeConfig: {},
   modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss"],
   i18n: {
     strategy: "prefix_except_default",
@@ -33,7 +30,6 @@ export default defineNuxtConfig({
       },
     ],
     vueI18n: "./i18n.config.ts",
-    // By default, Nuxt i18n module attempts to redirect users to their preferred language by detecting their browser's language. This is controlled by the detectBrowserLanguage option.
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",

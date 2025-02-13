@@ -4,12 +4,12 @@
     :class="isMenuVisible ? 'translate-y-0' : '-translate-y-full'"
   >
     <div class="w-1/2 flex items-center h-full">
-      <a class="px-4 md:pl-8 text-lg md:text-xl" href="/">
+      <a class="px-4 md:pl-8 text-lg md:text-xl" :href="localePath('/')">
         {{ $t("title") }}
       </a>
       <a
         class="h-full flex justify-center items-center px-4 hover:bg-gray-800 case-in-out duration-300"
-        href="/donate"
+        :href="localePath('donate')"
         >{{ $t("menu.donate") }}
       </a>
     </div>
@@ -17,7 +17,7 @@
     <!-- <div class="w-1/2 flex h-full"></div> -->
 
     <div class="w-1/2 h-full flex justify-end items-center">
-      <a href="https://github.com/dingdangdog/dingdangdog.github.io">
+      <a href="https://github.com/dingdangdog">
         <span><IconGithub class="w-8 h-8" :color="`rgb(243 244 246)`" /></span>
       </a>
       <LocaleSelect />
@@ -26,6 +26,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
 const isMenuVisible = ref(true); // 控制菜单是否可见
 let lastScrollPosition = 0;
 const threshold = 5; // 设置滚动的最小距离阈值
