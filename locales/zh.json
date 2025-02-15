@@ -5,7 +5,42 @@
   "menu": {
     "donate": "捐赠"
   },
-  "home-list": {
+  "works": {
     "title": "我的作品"
+  },
+  "post": {
+    "predoing": "即将跳转到博客文章",
+    "target": "目标页面",
+    "please_wait": "请稍候，或点击上方链接立即跳转",
+    "will": "将在",
+    "auto_redirect": "秒后自动跳转",
+    "cancel_redirect": "取消跳转"
+  },
+  "404": {
+    "title": "页面未找到",
+    "blog_tip": "博客已经迁移至",
+    "go_home": "返回首页",
+    "go_blog": "前往博客"
+  },
+  "donate": {
+    "donation_title": "捐赠说明",
+    "greeting": "感谢您访问我的捐赠页面！您的支持将帮助我继续专注于开发和维护这些开源项目。",
+    "encouragement": "如果您认为我的工作对您有帮助，任何形式的捐赠都会对我产生极大的鼓励！无论金额大小，您的支持不仅仅是对我努力的认可，也是对整个开源社区的支持。",
+    "donation_usage_title": "您的捐赠将帮助我：",
+    "donation_usage_items": [
+      "继续维护现有的项目，修复Bug并提供更新。",
+      "开发更多有用的软件和工具。",
+      "支付服务器、工具和其他开发相关的费用。",
+      "有更多时间专注于开源项目，减少生活经济压力。"
+    ],
+    "donation_methods_title": "捐赠方式",
+    "alipay_wechat_title": "1. 支付宝/微信支付：扫码支付支持（二维码将会在下方展示）",
+    "alipay": "支付宝",
+    "wechat": "微信",
+    "paypal_title": "2. PayPal",
+    "paypal_description": "您可以通过 PayPal 链接(<a href=\"https://paypal.me/dddogx\" target=\"_blank\" class=\"hover:text-blue-300 underline\">https://paypal.me/dddogx</a>) 捐赠，捐赠金额由您自行决定。",
+    "supporters_title": "感谢支持者",
+    "supporters_message": "感谢每一位支持我的人！",
+    "participation_message": "无论是通过捐赠，还是在项目中留下反馈或建议，您的参与都对我意义重大。"
   }
 }

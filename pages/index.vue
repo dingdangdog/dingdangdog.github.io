@@ -13,7 +13,7 @@
     <!-- Products -->
     <div class="bg-gray-800 rounded-md" style="max-width: 1080px; margin: auto">
       <h2 class="text-lg md:text-xl text-center py-2 text-gray-300">
-        {{ $t("home-list.title") }}
+        {{ $t("works.title") }}
       </h2>
       <div class="flex flex-wrap justify-center md:p-2">
         <div
@@ -56,9 +56,9 @@ interface Site {
 }
 
 // 断言语言文件中的 `items` 为数组类型
-const sites: Site[] = [
+const zhSites: Site[] = [
   {
-    title: "月上老狗",
+    title: "博客",
     url: "https://www.oldmoon.top",
     icon: "/oldmoon.png",
     color: "rgb(255,255,255)",
@@ -88,6 +88,45 @@ const sites: Site[] = [
     color: "rgb(122,122,122)",
   },
 ];
+const enSites: Site[] = [
+  {
+    title: "Blog",
+    url: "https://www.oldmoon.top",
+    icon: "/oldmoon.png",
+    color: "rgb(255,255,255)",
+  },
+  {
+    title: "Cashbook",
+    url: "https://github.com/dingdangdog/cashbook",
+    icon: "/cashbook.png",
+    color: "rgb(104,233,145)",
+  },
+  {
+    title: "Doimage",
+    url: "https://github.com/dingdangdog/Doimage",
+    icon: "/doimage.png",
+    color: "rgb(247,72,126)",
+  },
+  {
+    title: "ImageProcessing",
+    url: "https://imgpro.oldmoon.top",
+    icon: "https://imgpro.oldmoon.top/favicon.png",
+    color: "rgb(134,27,196)",
+  },
+  {
+    title: "WeChat Editor",
+    url: "https://wxeditor.oldmoon.top",
+    icon: "https://wxeditor.oldmoon.top/assets/images/favicon.png",
+    color: "rgb(122,122,122)",
+  },
+];
+const { locale, locales } = useI18n();
+const sites = ref<Site[]>([]);
+if (locale.value === "zh") {
+  sites.value = zhSites;
+} else {
+  sites.value = enSites;
+}
 </script>
 
 <style scoped></style>

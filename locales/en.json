@@ -5,7 +5,43 @@
   "menu": {
     "donate": "Donate"
   },
-  "home-list": {
+  "works": {
     "title": "my works"
+  },
+  "post": {
+    "predoing": "You will be redirected to the blog post",
+    "target": "Target page",
+    "please_wait": "Please wait, or click the link above to jump immediately.",
+    "will": "Will automatically jump after",
+    "auto_redirect": "seconds",
+    "redirecting": "Redirecting",
+    "cancel_redirect": "Cancel jump"
+  },
+  "404": {
+    "title": "Page not found",
+    "blog_tip": "Blog has been moved to",
+    "go_home": "Go Home",
+    "go_blog": "Go Blog"
+  },
+  "donate": {
+    "donation_title": "About Donation",
+    "greeting": "Thank you for visiting my donation page! Your support will help me continue to focus on developing and maintaining these open-source projects.",
+    "encouragement": "If you find my work helpful, any form of donation would be a great encouragement to me! No matter the amount, your support is not only a recognition of my efforts but also a support for the entire open-source community.",
+    "donation_usage_title": "Your donations will help me:",
+    "donation_usage_items": [
+      "Continue to maintain existing projects, fix bugs, and provide updates.",
+      "Develop more useful software and tools.",
+      "Pay for servers, tools, and other development-related expenses.",
+      "Have more time to focus on open-source projects and reduce financial pressure."
+    ],
+    "donation_methods_title": "Donation Methods",
+    "alipay_wechat_title": "1. Alipay/WeChat Pay: Scan QR code to support (QR codes will be displayed below)",
+    "alipay": "Alipay",
+    "wechat": "WeChat",
+    "paypal_title": "2. PayPal",
+    "paypal_description": "You can donate via the PayPal link(<a href=\"https://paypal.me/dddogx\" target=\"_blank\" class=\"hover:text-blue-300 underline\">https://paypal.me/dddogx</a>), and you can decide the donation amount yourself.",
+    "supporters_title": "Thanks",
+    "supporters_message": "Thank you to everyone who supports me!",
+    "participation_message": "Whether through donations, or by leaving feedback or suggestions in projects, your participation means a lot to me."
   }
 }
