@@ -5,8 +5,11 @@
   "menu": {
     "donate": "捐赠"
   },
-  "works": {
-    "title": "我的作品"
+  "products": {
+    "title": "作品"
+  },
+  "tools": {
+    "title": "工具"
   },
   "post": {
     "predoing": "即将跳转到博客文章",

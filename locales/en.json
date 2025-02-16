@@ -5,8 +5,11 @@
   "menu": {
     "donate": "Donate"
   },
-  "works": {
-    "title": "my works"
+  "products": {
+    "title": "Products"
+  },
+  "tools": {
+    "title": "Tools"
   },
   "post": {
     "predoing": "You will be redirected to the blog post",
