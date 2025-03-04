@@ -12,13 +12,12 @@
     "title": "Tools"
   },
   "post": {
-    "predoing": "You will be redirected to the blog post",
-    "target": "Target page",
-    "please_wait": "Please wait, or click the link above to jump immediately.",
-    "will": "Will automatically jump after",
-    "auto_redirect": "seconds",
-    "redirecting": "Redirecting",
-    "cancel_redirect": "Cancel jump"
+    "predoing": "即将跳转到博客文章",
+    "target": "目标页面",
+    "please_wait": "请稍候，或点击上方链接立即跳转",
+    "will": "将在",
+    "auto_redirect": "秒后自动跳转",
+    "cancel_redirect": "取消跳转"
   },
   "404": {
     "title": "Page not found",
