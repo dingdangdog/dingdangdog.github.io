@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "icon",
-          href: "/dingdangdog.jpg",
+          href: "/dingdangdog.png",
         },
       ],
     },

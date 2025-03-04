@@ -132,7 +132,7 @@ const enSites: Site[] = [
     title: "Cashbook",
     url: "https://github.com/dingdangdog/cashbook",
     icon: "/cashbook.png",
-    color: "rgb(104,233,145)",
+    color: "rgb(34,119,51)",
   },
   {
     title: "Doimage",
@@ -141,10 +141,10 @@ const enSites: Site[] = [
     color: "rgb(247,72,126)",
   },
   {
-    title: "ImageProcessing",
-    url: "https://imgpro.oldmoon.top",
-    icon: "https://imgpro.oldmoon.top/favicon.png",
-    color: "rgb(134,27,196)",
+    title: "EasyImage",
+    url: "https://easyimage.work",
+    icon: "https://easyimage.work/favicon.webp",
+    color: "rgb(46,170,187)",
   },
   // {
   //   title: "WeChat Editor",
