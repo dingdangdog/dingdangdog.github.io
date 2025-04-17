@@ -98,9 +98,15 @@ const zhSites: Site[] = [
   },
   {
     title: "Cashbook",
-    url: "https://github.com/dingdangdog/cashbook",
+    url: "https://doc.cashbook.oldmoon.top",
     icon: "/cashbook.png",
-    color: "rgb(104,233,145)",
+    color: "rgb(19,145,59)",
+  },
+  {
+    title: "文声AI",
+    url: "https://vwordai.com",
+    icon: "https://vwordai.com/logo.svg",
+    color: "rgb(21,101,204)",
   },
   {
     title: "Doimage",
@@ -109,17 +115,17 @@ const zhSites: Site[] = [
     color: "rgb(247,72,126)",
   },
   {
-    title: "老狗图片处理厂",
-    url: "https://imgpro.oldmoon.top",
-    icon: "https://imgpro.oldmoon.top/favicon.png",
-    color: "rgb(134,27,196)",
+    title: "简单图片",
+    url: "https://easyimage.work",
+    icon: "https://easyimage.work/favicon.webp",
+    color: "rgb(46,170,187)",
   },
-  // {
-  //   title: "公众号MD编辑器",
-  //   url: "https://wxeditor.oldmoon.top",
-  //   icon: "https://wxeditor.oldmoon.top/assets/images/favicon.png",
-  //   color: "rgb(122,122,122)",
-  // },
+  {
+    title: "公众号MD编辑器",
+    url: "https://wxeditor.oldmoon.top",
+    icon: "https://wxeditor.oldmoon.top/assets/images/favicon.png",
+    color: "rgb(122,122,122)",
+  },
 ];
 const enSites: Site[] = [
   {
