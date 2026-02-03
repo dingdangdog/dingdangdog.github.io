@@ -16,27 +16,14 @@
         {{ $t("products.title") }}
       </h2>
       <div class="flex flex-wrap justify-center md:p-2">
-        <div
-          v-for="site in sites"
-          class="max-w-28 max-h-32 md:max-w-48 md:max-h-48 w-full h-full md:p-2 hover:p-0 m-1 md:m-0 duration-300 ease-in-out"
-        >
-          <div
-            class="w-full h-full rounded-md bg-gray-800 cursor-pointer hover:bg-gray-700 ease-in-out"
-            :title="site.url"
-          >
-            <a
-              class="w-full p-2 flex flex-col justify-center items-center"
-              :href="site.url"
-              target="_blank"
-            >
-              <img
-                :src="site.icon"
-                class="w-16 md:w-24 h-16 md:h-24 object-contain m-0 md:m-2 rounded-md overflow-hidden"
-              />
-              <h3
-                class="py-1 md:py-2 text-base md:text-xl"
-                :style="`color:${site.color}`"
-              >
+        <div v-for="site in sites"
+          class="max-w-28 max-h-32 md:max-w-48 md:max-h-48 w-full h-full md:p-2 hover:p-0 m-1 md:m-0 duration-300 ease-in-out">
+          <div class="w-full h-full rounded-md bg-gray-800 cursor-pointer hover:bg-gray-700 ease-in-out"
+            :title="site.url">
+            <a class="w-full p-2 flex flex-col justify-center items-center" :href="site.url" target="_blank">
+              <img :src="site.icon"
+                class="w-16 md:w-24 h-16 md:h-24 object-contain m-0 md:m-2 rounded-md overflow-hidden" />
+              <h3 class="py-1 md:py-2 text-base md:text-xl" :style="`color:${site.color}`">
                 {{ site.title }}
               </h3>
             </a>
@@ -44,39 +31,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="bg-gray-800 rounded-md max-w-5xl mx-auto mt-4">
-      <h2 class="text-lg md:text-xl text-center py-2 text-gray-300">
-        {{ $t("tools.title") }}
-      </h2>
-      <div class="flex flex-wrap justify-center md:p-2">
-        <div
-          v-for="site in sites"
-          class="max-w-28 max-h-32 md:max-w-48 md:max-h-48 w-full h-full md:p-2 hover:p-0 m-1 md:m-0 duration-300 ease-in-out"
-        >
-          <div
-            class="w-full h-full rounded-md bg-gray-800 cursor-pointer hover:bg-gray-700 ease-in-out"
-            :title="site.url"
-          >
-            <a
-              class="w-full p-2 flex flex-col justify-center items-center"
-              :href="site.url"
-              target="_blank"
-            >
-              <img
-                :src="site.icon"
-                class="w-16 md:w-24 h-16 md:h-24 object-contain m-0 md:m-2 rounded-md overflow-hidden"
-              />
-              <h3
-                class="py-1 md:py-2 text-base md:text-xl"
-                :style="`color:${site.color}`"
-              >
-                {{ site.title }}
-              </h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -91,9 +45,15 @@ interface Site {
 // 断言语言文件中的 `items` 为数组类型
 const zhSites: Site[] = [
   {
-    title: "博客",
+    title: "博客（旧）",
     url: "https://www.oldmoon.top",
     icon: "/oldmoon.png",
+    color: "rgb(255,255,255)",
+  },
+  {
+    title: "LodenHu",
+    url: "https://www.lodenhu.com",
+    icon: "https://www.lodenhu.com/logo.webp",
     color: "rgb(255,255,255)",
   },
   {
@@ -105,14 +65,8 @@ const zhSites: Site[] = [
   {
     title: "文声AI",
     url: "https://vwordai.com",
-    icon: "https://vwordai.com/logo.svg",
+    icon: "https://www.vwordai.com/logo.svg",
     color: "rgb(21,101,204)",
-  },
-  {
-    title: "Doimage",
-    url: "https://github.com/dingdangdog/Doimage",
-    icon: "/doimage.png",
-    color: "rgb(247,72,126)",
   },
   {
     title: "简单图片",
@@ -121,18 +75,24 @@ const zhSites: Site[] = [
     color: "rgb(46,170,187)",
   },
   {
-    title: "公众号MD编辑器",
-    url: "https://wxeditor.oldmoon.top",
-    icon: "https://wxeditor.oldmoon.top/assets/images/favicon.png",
-    color: "rgb(122,122,122)",
+    title: "NotePix",
+    url: "https://notepix.oldmoon.top",
+    icon: "https://notepix.oldmoon.top/logo.webp",
+    color: "rgb(60,150,200)",
   },
 ];
 const enSites: Site[] = [
   {
-    title: "Blog",
+    title: "Blog(old)",
     url: "https://www.oldmoon.top",
     icon: "/oldmoon.png",
     color: "rgb(255,255,255)",
+  },
+  {
+    title: "LodenHu",
+    url: "https://www.lodenhu.com",
+    icon: "https://www.lodenhu.com/favicon.ico",
+    color: "rgb(21,101,204)",
   },
   {
     title: "Cashbook",
@@ -141,16 +101,16 @@ const enSites: Site[] = [
     color: "rgb(34,119,51)",
   },
   {
-    title: "Doimage",
-    url: "https://github.com/dingdangdog/Doimage",
-    icon: "/doimage.png",
-    color: "rgb(247,72,126)",
-  },
-  {
     title: "EasyImage",
     url: "https://easyimage.work",
     icon: "https://easyimage.work/favicon.webp",
     color: "rgb(46,170,187)",
+  },
+  {
+    title: "NotePix",
+    url: "https://notepix.oldmoon.top",
+    icon: "https://notepix.oldmoon.top/favicon.ico",
+    color: "rgb(60,150,200)",
   },
   // {
   //   title: "WeChat Editor",
